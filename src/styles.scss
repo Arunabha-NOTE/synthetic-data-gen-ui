@@ -1,0 +1,214 @@
+@import "primeng/resources/themes/lara-dark-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+
+.p-radiobutton {
+    display: flex;
+    flex-direction: row;
+    gap : 1rem;
+}
+
+
+
+.gen {
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+.genbutton, p-button {
+    display : flex;
+    align-items : center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top : 2rem;
+}
+
+
+
+.textinput {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.homeclass {
+    display: flex;
+    flex-direction : column;
+    gap : 5rem;
+    margin-top : 5rem;
+}
+
+hr {
+    margin-left: 5vh;
+    margin-right : 5vh;
+    border-color : #5da1f5;
+}
+
+.upload {
+    margin-left: 2%;
+    margin-right : 2%;
+    max-width : 96%;
+    justify-content : center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .upload {
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+}
+
+.text-area {
+    max-width : 96%;
+    width : 100%;
+    margin-left : 2%;
+    margin-right : 2%;
+    min-height : 10rem;
+}
+
+.p-menubar {
+    position : fixed;
+    max-width : 80rem;
+    width: 100%;
+    z-index: 10000;
+    background: rgba(31, 41, 55, 0.57);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border: 1px solid #5da1f5;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::selection {
+    background: #5da1f5;
+    color: #f8f8f2;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #5da1f5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color : #5da1f5;
+    text-align : center;
+}
+
+.instructions {
+    box-sizing: border-box;
+    margin-right : 2%;
+    margin-left : 2%;
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 96%;
+}
+
+html,
+body,
+app-root {
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    background: #111827;
+    max-width: 80rem;
+
+}
+
+@media screen and (max-width: 600px) {
+    html,body,app-root {
+        overflow-x : hidden;
+    }
+}
+
+app-root {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.mt-15 {
+    margin-top: 5vh;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.mb-15 {
+    margin-bottom: 5vh;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.gap-05 {
+    gap: 0.5rem;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.full-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+

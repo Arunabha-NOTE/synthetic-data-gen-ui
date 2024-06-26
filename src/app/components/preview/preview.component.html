@@ -1,0 +1,54 @@
+<div class="instructions  mt-15 ">
+
+    <div class="justify-center items-center previewtable">
+        <h1>Preview Table</h1>
+        @if(isLoading){
+            <p-blockUI></p-blockUI>
+        }@else if (error) {
+            <div>
+                Error fetching data: {{ error }}
+            </div>
+        }@else {
+            <p-table [value]="data">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>ID</th>
+                        <th>Field Name</th>
+                        <th>Data Type</th>
+                        <th>Max Value</th>
+                        <th>Min Value</th>
+                        <th>Probabilistic Distribution</th>
+                        <th>Remarks</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-item>
+                    <tr>
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.field_name }}</td>
+                        <td>{{ item.data_type }}</td>
+                        <td>{{ item.max_value }}</td>
+                        <td>{{ item.min_value }}</td>
+                        <td>{{ item.any_probabilistic_distribution }}</td>
+                        <td>{{ item.remarks }}</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        }
+
+    </div>
+
+    <div class="justify-center gap-2 mt-15 align-center textinput">
+        <h1 class="mt-15">Select File Type Here</h1>
+        <app-form></app-form>
+        <h1 class="mt-15">Enter No. of records Here</h1>
+        <textarea class="text-area" pInputTextarea [(ngModel)]="value">
+        </textarea>
+        <h1 class="mt-15">Enter Remarks Here</h1>
+        <textarea class="text-area" pInputTextarea [(ngModel)]="value">
+        </textarea>
+    </div>
+
+    <div class="flex genbutton mt-15 justify-content-center">
+        <p-button label="Generate" icon="pi pi-sparkles" />
+    </div>
+</div>

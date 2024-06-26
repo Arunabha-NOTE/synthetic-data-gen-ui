@@ -1,0 +1,36 @@
+<div class="homeclass">
+    <div class="column gap-1 mt-15 align-center">
+        <h1 class="">Instructions</h1>
+        <p class="instructions">
+            Welcome to the Synthetic Data Generator! Please upload a Json file with the following columns:
+            <strong>field_name</strong> (name of the field),
+            <strong>data_type</strong> (e.g., integer, float, string),
+            <strong>max_value</strong> (maximum value for numeric types),
+            <strong>min_value</strong> (minimum value for numeric types), and
+            <strong>probabilistic_distribution</strong> (e.g., normal, uniform).
+            Example:
+        </p>
+        <p class="instructions">
+            field_name,data_type,max_value
+            ,min_value
+            ,probabilistic_distribution
+        <p class="instructions">
+            Upload the Json file to start generating synthetic data. Ensure your Json has no missing headers or typos.
+            You can also attach additional instructions for the llm in the remarks section. There is also a sample json file available for download.
+        </p>
+    </div>
+    <!-- sample button -->
+    <div class="gen">
+        <p-button label="sample.json" (onClick)="handleClick()" [raised]="true" />
+    </div>
+
+
+    <!--upload button-->
+    <app-upload-button></app-upload-button>
+
+    <!--remarks-->
+    <div class="genbutton">
+        <p-button label="continue to preview page" (onClick)="nextPage()" [raised]="true" />
+    </div>
+</div>
+

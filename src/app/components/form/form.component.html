@@ -1,0 +1,48 @@
+<div class="multi-select">
+    <div class="flex flex-wrap gap-3 file-types">
+        <div class="flex align-items-center">
+            <p-radioButton
+                name="Type"
+                value="xml"
+                [(ngModel)]="ingredient"
+                inputId="ingredient1" />
+            <label for="ingredient1" class="ml-2">
+                XML
+            </label>
+        </div>
+
+        <div class="flex align-items-center">
+            <p-radioButton
+                name="Type"
+                value="JSON"
+                [(ngModel)]="ingredient"
+                inputId="ingredient2" />
+            <label for="ingredient2" class="ml-2">
+                JSON
+            </label>
+        </div>
+
+        <div class="flex align-items-center">
+            <p-radioButton
+                name="Type"
+                value="CSV"
+                [(ngModel)]="ingredient"
+                inputId="ingredient3" />
+            <label for="ingredient3" class="ml-2">
+                CSV
+            </label>
+        </div>
+
+        <div class="flex align-items-center">
+            <p-radioButton
+                name="Type"
+                value="TXT"
+                [(ngModel)]="ingredient"
+                inputId="ingredient4" />
+            <label for="ingredient4" class="ml-2">
+                TXT
+            </label>
+        </div>
+    </div>
+</div>
+

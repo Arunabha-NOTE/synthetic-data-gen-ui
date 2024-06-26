@@ -1,0 +1,17 @@
+<h1 class="justify-center mb-25 align-center">Upload Json Here</h1>
+<div class="p-fluid">
+    <p-fileUpload
+        name="jsonFile"
+        url=""
+        mode="basic"
+        accept=".json"
+        maxFileSize="1000000"
+        customUpload="true"
+        (uploadHandler)="onFileSelect($event)"
+        chooseLabel="Select JSON File">
+    </p-fileUpload>
+    <button pButton type="button" label="Upload JSON" (click)="uploadJSON()" icon="pi pi-upload"></button>
+    <p-toast></p-toast>
+    <p-message *ngIf="uploadError" severity="warning" text="{{uploadError}}"></p-message>
+    <p-message *ngIf="uploadSuccess" severity="success" text="{{uploadSuccess}}"></p-message>
+</div>
